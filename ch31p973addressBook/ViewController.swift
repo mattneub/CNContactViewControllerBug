@@ -3,6 +3,10 @@ import UIKit
 import Contacts
 import ContactsUI
 
+class MyNavigationController : UINavigationController {
+    // a kind of workaround from http://stackoverflow.com/a/34289350/341994
+    // override func setNavigationBarHidden(hidden: Bool, animated: Bool) {}
+}
 
 
 class ViewController : UIViewController, CNContactPickerDelegate, CNContactViewControllerDelegate {
